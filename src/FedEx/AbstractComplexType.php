@@ -48,6 +48,15 @@ abstract class AbstractComplexType
     }
 
     /**
+     * __get implementation
+     *
+     * @param string $name
+     */
+    public function __get($name) {
+        return $this->_values[$name];
+    }
+
+    /**
      * Recursive algorthim to convert complex types to an array
      *
      * @param array $arrayValues
